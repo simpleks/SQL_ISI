@@ -6,7 +6,7 @@ Do sprawdzenia zapytań wykorzystywałem probram ``DB Browser for SQLite``
 
 - polecenie ``` sql
 select * from little_penguins;```
-![img.png](img.png)  
+![img.png](screen/img.png)  
 
   
   - polecenie ```sql
@@ -16,7 +16,7 @@ select
     sex
 from little_penguins;```
 
-![img_1.png](img_1.png)
+![img_1.png](screen/img_1.png)
 
 - polecenie  ``select
     species,
@@ -25,7 +25,7 @@ from little_penguins;```
 from little_penguins
 order by island asc, sex desc;``  
 
-![img_2.png](img_2.png)
+![img_2.png](screen/img_2.png)
 
 
 - plecenie ``select
@@ -36,7 +36,7 @@ from penguins
 order by species, sex, island
 limit 10;``  
 
-![img_3.png](img_3.png)
+![img_3.png](screen/img_3.png)
 
 - polecenie ``select
     species,
@@ -46,7 +46,7 @@ from penguins
 order by species, sex, island
 limit 10 offset 3;``
 
-![img_4.png](img_4.png)
+![img_4.png](screen/img_4.png)
 
 
 - polecenie ``select distinct
@@ -55,7 +55,7 @@ limit 10 offset 3;``
     island
 from penguins;``
 
-![img_5.png](img_5.png)
+![img_5.png](screen/img_5.png)
 
 - polecenie ``` sql
 select distinct
@@ -65,7 +65,7 @@ select distinct
 from penguins
 where island = 'Biscoe';```
 
-![img_6.png](img_6.png)
+![img_6.png](screen/img_6.png)
 
 
 - polecenie ``
@@ -78,7 +78,7 @@ where island = 'Biscoe' and sex != 'MALE';
 ``
 
 
-![img_7.png](img_7.png)
+![img_7.png](screen/img_7.png)
 
 
 - polecenie ``select
@@ -88,7 +88,7 @@ from penguins
 limit 3;``
 
 
-![img_8.png](img_8.png)
+![img_8.png](screen/img_8.png)
 
 
 - polecenie ``select
@@ -98,7 +98,7 @@ limit 3;``
 from penguins
 limit 3;``
 
-![img_9.png](img_9.png)
+![img_9.png](screen/img_9.png)
 
 - polecenie ``select
     flipper_length_mm / 10.0 as flipper_cm,
@@ -107,7 +107,7 @@ limit 3;``
 from penguins
 limit 5;``
 
-![img_10.png](img_10.png)
+![img_10.png](screen/img_10.png)
 
 - polecenie ``select distinct
     species,
@@ -116,7 +116,7 @@ limit 5;``
 from penguins
 where island = 'Biscoe';``
 
-![img_11.png](img_11.png)
+![img_11.png](screen/img_11.png)
 
 - polecenie ``select distinct
     species,
@@ -125,7 +125,7 @@ where island = 'Biscoe';``
 from penguins
 where island = 'Biscoe' and sex = 'FEMALE';``
 
-![img_12.png](img_12.png)
+![img_12.png](screen/img_12.png)
 
 
 - polecenie ``select distinct
@@ -135,11 +135,11 @@ where island = 'Biscoe' and sex = 'FEMALE';``
 from penguins
 where island = 'Biscoe' and sex = 'FEMALE';``  
 
-![img_13.png](img_13.png)
+![img_13.png](screen/img_13.png)
 
 - polecenie ``select null = null;``
 
-![img_14.png](img_14.png)
+![img_14.png](screen/img_14.png)
 
 
 - polecenie ``select
@@ -149,12 +149,12 @@ where island = 'Biscoe' and sex = 'FEMALE';``
 from penguins
 where sex is null;``  
 
-![img_15.png](img_15.png)
+![img_15.png](screen/img_15.png)
 
 - polecenie ``select sum(body_mass_g) as total_mass
 from penguins;``
 
-![img_16.png](img_16.png)
+![img_16.png](screen/img_16.png)
 
 
 - polecenie ``select
@@ -163,7 +163,7 @@ from penguins;``
     avg(bill_length_mm) / avg(bill_depth_mm) as weird_ratio
 from penguins;``
 
-![img_17.png](img_17.png)
+![img_17.png](screen/img_17.png)
 
 
 - polecenie ``select
@@ -173,13 +173,13 @@ from penguins;``
 from penguins;``
 
 
-![img_18.png](img_18.png)
+![img_18.png](screen/img_18.png)
 
 - polecenie ``select avg(body_mass_g) as average_mass_g
 from penguins
 group by sex;``
 
-![img_19.png](img_19.png)
+![img_19.png](screen/img_19.png)
 
 
 - polecenie ``select
@@ -188,7 +188,7 @@ group by sex;``
 from penguins
 group by sex;``  
 
-![img_20.png](img_20.png)
+![img_20.png](screen/img_20.png)
 
 
 - polecenie ``select
@@ -198,7 +198,7 @@ from penguins
 group by sex;``
 
 
-![img_21.png](img_21.png)
+![img_21.png](screen/img_21.png)
 
 
 - polecenie ``select
@@ -209,7 +209,7 @@ group by sex
 having average_mass_g > 4000.0;``
 
 
-![img_22.png](img_22.png)
+![img_22.png](screen/img_22.png)
 
 
 - polcenie ``select
@@ -219,7 +219,7 @@ from penguins
 group by sex
 having average_mass_g > 4000.0;``
 
-![img_23.png](img_23.png)
+![img_23.png](screen/img_23.png)
 
 - polecenie ``select
     sex,
@@ -230,26 +230,26 @@ having average_mass_g > 4000.0;``
 from penguins
 group by sex;``
 
-![img_24.png](img_24.png)
+![img_24.png](screen/img_24.png)
 
 
 - polecenie ``select *
 from penguins cross join little_penguins;``
 
 
-![img_25.png](img_25.png)
+![img_25.png](screen/img_25.png)
 
 
 - polecenie ``delete from work
 where person = 'tae';
 select * from work;``
 
-![img_26.png](img_26.png)
+![img_26.png](screen/img_26.png)
 
 - polecenie ``select *
 from work cross join job;``
 
-![img_27.png](img_27.png)
+![img_27.png](screen/img_27.png)
 
 
 - polecenie ``select
@@ -259,13 +259,13 @@ from work inner join job
     on work.job = job.name
 group by work.person;``
 
-![img_28.png](img_28.png)
+![img_28.png](screen/img_28.png)
 
 - polecenie ``select *
 from work left join job
     on work.job = job.name;``
 
-![img_29.png](img_29.png)
+![img_29.png](screen/img_29.png)
 
 
 # Tools
@@ -274,14 +274,14 @@ from work left join job
 from work
 where job != 'calibrate';``
 
-![img_30.png](img_30.png)
+![img_30.png](screen/img_30.png)
 
 - polecenie ``select *
 from work
 where person not in ('mik', 'tay');``
 
 
-![img_31.png](img_31.png)
+![img_31.png](screen/img_31.png)
 
 
 - polecenie ``select distinct person
@@ -292,7 +292,7 @@ where person not in (
     where job = 'calibrate'
 );``
 
-![img_32.png](img_32.png)
+![img_32.png](screen/img_32.png)
 
 
 - polecenie ``create table lab_equipment (
@@ -310,7 +310,7 @@ insert into lab_equipment values
 (1.5, 'green', 2);``
 
 
-![img_33.png](img_33.png)
+![img_33.png](screen/img_33.png)
 
 
 - polecenie ``alter table job
@@ -323,7 +323,7 @@ set ident = 2
 where name = 'clean';
 select * from job;``
 
-![img_34.png](img_34.png)
+![img_34.png](screen/img_34.png)
 
 - polecenie ``create table new_work (
     person_id integer not null,
@@ -340,7 +340,7 @@ from
     inner join job on job.name = work.job;
 select * from new_work;``
 - 
-![img_35.png](img_35.png)
+![img_35.png](screen/img_35.png)
 
 
 - polecenie ``select body_mass_g
@@ -353,7 +353,7 @@ where
 limit 5;``
 
 
-![img_36.png](img_36.png)
+![img_36.png](screen/img_36.png)
 
 
 - polecenie ``select
@@ -371,7 +371,7 @@ from penguins inner join (
 where penguins.body_mass_g > averaged.avg_mass_g
 limit 5;``
 
-![img_37.png](img_37.png)
+![img_37.png](screen/img_37.png)
 
 
 - polecenie ``select
@@ -381,7 +381,7 @@ limit 5;``
 from penguins
 limit 5;``
 
-![img_38.png](img_38.png)
+![img_38.png](screen/img_38.png)
 
 
 - polecenie ``with sized_penguins as (
@@ -403,7 +403,7 @@ from sized_penguins
 group by species, size
 order by species, num;``
 
-![img_39.png](img_39.png)
+![img_39.png](screen/img_39.png)
 
 
 - polecenie ``with sized_penguins as (
@@ -425,7 +425,7 @@ from sized_penguins
 group by species, size
 order by species, num;``
 
-![img_40.png](img_40.png)
+![img_40.png](screen/img_40.png)
 
 
 - polecenie ``with sized_penguins as (
@@ -446,13 +446,13 @@ from sized_penguins
 group by species, size
 order by species, num;``
 
-![img_41.png](img_41.png)
+![img_41.png](screen/img_41.png)
 
 
 
 - polecenie ``select * from staff;``
 
-![img_42.png](img_42.png)
+![img_42.png](screen/img_42.png)
 
 
 - polecenie ``select
@@ -461,7 +461,7 @@ order by species, num;``
 from staff
 where personal like '%ya%';``
 
-![img_43.png](img_43.png)
+![img_43.png](screen/img_43.png)
 
 
 - polecenie ``select * from (
@@ -471,7 +471,7 @@ where personal like '%ya%';``
 )
 order by started asc;``
 
-![img_44.png](img_44.png)
+![img_44.png](screen/img_44.png)
 
 - polecenie ``select
     personal,
@@ -488,7 +488,7 @@ select
     age from staff
 where age < 50;``
 
-![img_45.png](img_45.png)
+![img_45.png](screen/img_45.png)
 
 - polecenie ``select
     personal,
@@ -506,7 +506,7 @@ except
     where age < 50;``
 
 
-![img_46.png](img_46.png)
+![img_46.png](screen/img_46.png)
 
 
 - polecenie ``with decorated as (
@@ -522,7 +522,7 @@ select
 from decorated
 where selector < 5;``
 
-![img_47.png](img_47.png)
+![img_47.png](screen/img_47.png)
 
 
 - polecenie ``explain query plan
@@ -535,7 +535,7 @@ select filename
 from plate
 where filename like '%07%';``
 
-![img_48.png](img_48.png)
+![img_48.png](screen/img_48.png)
 
 - polecenie ``with person as (
     select
@@ -551,7 +551,7 @@ on left_person.ident < right_person.ident
 where left_person.ident <= 4 and right_person.ident <= 4;``
 
 
-![img_49.png](img_49.png)
+![img_49.png](screen/img_49.png)
 
 
 - polecenie ``with
@@ -575,7 +575,7 @@ select
 from person as left_person inner join person as right_person join together
     on left_person.ident = left_staff and right_person.ident = right_staff;``
 
-![img_50.png](img_50.png)
+![img_50.png](screen/img_50.png)
 
 - polecenie ``select
     name,
@@ -589,7 +589,7 @@ where
     )
 order by name;``
 
-![img_51.png](img_51.png)
+![img_51.png](screen/img_51.png)
 
 - polecenie ``select
     name,
@@ -603,7 +603,7 @@ where
     )
 order by name;``
 
-![img_52.png](img_52.png)
+![img_52.png](screen/img_52.png)
 
 
 - polecenie ``select distinct
@@ -613,7 +613,7 @@ from department inner join staff
     on department.ident = staff.dept
 order by name;``
 
-![img_53.png](img_53.png)
+![img_53.png](screen/img_53.png)
 
 
 - polecenie ``with ym_num as (
@@ -631,7 +631,7 @@ select
 from ym_num
 order by ym;``
 
-![img_54.png](img_54.png)
+![img_54.png](screen/img_54.png)
 
 
 - polecenie ``with ym_num as (
@@ -651,7 +651,7 @@ from ym_num
 order by ym;``
 
 
-![img_55.png](img_55.png)
+![img_55.png](screen/img_55.png)
 
 
 - polecenie ``explain query plan
@@ -671,7 +671,7 @@ from ym_num
 order by ym;``
 
 
-![img_56.png](img_56.png)
+![img_56.png](screen/img_56.png)
 
 
 - polecenie ``with y_m_num as (
@@ -690,11 +690,11 @@ select
 from y_m_num
 order by year, month;``
 
-![img_57.png](img_57.png)
+![img_57.png](screen/img_57.png)
 
 - polecenie ``select * from machine;``
 
-![img_58.png](img_58.png)
+![img_58.png](screen/img_58.png)
 
 
 - polecenie ``select
@@ -704,7 +704,7 @@ order by year, month;``
 from usage, json_each(usage.log)
 limit 10;``
 
-![img_59.png](img_59.png)
+![img_59.png](screen/img_59.png)
 
 - polecenie ``select
     ident,
@@ -712,7 +712,7 @@ limit 10;``
     json_set(details, '$.sold', json_quote('2024-01-25')) as updated
 from machine;``
 
-![img_60.png](img_60.png)
+![img_60.png](screen/img_60.png)
 
 - polecenie ``select
     species,
@@ -720,7 +720,7 @@ from machine;``
 from penguins
 group by species;``
 
-![img_62.png](img_62.png)
+![img_62.png](screen/img_62.png)
 
 - polecenie ``alter table penguins
 add active integer not null default 1;
@@ -733,7 +733,7 @@ from penguins
 where active
 group by species;``
 
-![img_63.png](img_63.png)
+![img_63.png](screen/img_63.png)
 
 
 - polecenie ``create table lineage (
@@ -750,7 +750,7 @@ insert into lineage values
 ('Lourdes', 'Santiago');
 select * from lineage;``
 
-![img_64.png](img_64.png)
+![img_64.png](screen/img_64.png)
 
 - polecenie ``with recursive descendent as (
     select
@@ -767,7 +767,7 @@ select
     person,
     generations
 from descendent;``
-![img_65.png](img_65.png)
+![img_65.png](screen/img_65.png)
 
 
 
@@ -775,11 +775,11 @@ from descendent;``
 
 # Skrypt
 
-
 ```python
 
 import sqlite3
-db_path = 'C:/Users/zbign/Desktop/ISI__LAB/sql-tutorial/db/penguins.db'
+
+db_path = '/db/penguins.db'
 connection = sqlite3.connect(db_path)
 cursor = connection.execute("select count(*) from penguins;")
 rows = cursor.fetchall()
