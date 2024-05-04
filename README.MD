@@ -787,7 +787,7 @@ print(rows)
 ```
 
 wynik:
-![img_66.png](img_66.png)
+![img_66.png](screen/img_66.png)
 
 
 ```python
@@ -801,7 +801,7 @@ while row := cursor.fetchone():
     print(row)
 ```
 
-![img_67.png](img_67.png)
+![img_67.png](screen/img_67.png)
 
 ```python
  connection = sqlite3.connect(":memory:")
@@ -816,7 +816,7 @@ while row := cursor.fetchone():
 
 ```
 
-![img_68.png](img_68.png)
+![img_68.png](screen/img_68.png)
 
 ```python
 connection = sqlite3.connect(":memory:")
@@ -827,7 +827,7 @@ cursor.executemany("insert into example values (?);", [(10,), (20,)])
 print("after insertion", cursor.execute("select * from example;").fetchall())
 ```
 
-![img_69.png](img_69.png)
+![img_69.png](screen/img_69.png)
 
 
 ```python
@@ -843,7 +843,7 @@ cursor.executescript(SETUP)
 print("after insertion", cursor.execute("select * from example;").fetchall())
 ```
 
-![img_70.png](img_70.png)
+![img_70.png](screen/img_70.png)
 
 
 ```python
@@ -863,7 +863,7 @@ except sqlite3.Error as exc:
 print("after execution", cursor.execute("select * from example;").fetchall())
 ```
 
-![img_71.png](img_71.png)
+![img_71.png](screen/img_71.png)
 
 
 ```python
@@ -889,7 +889,7 @@ for row in cursor.execute("select num, clip(num) from example;").fetchall():
     print(row)
 ```
 
-![img_72.png](img_72.png)
+![img_72.png](screen/img_72.png)
 
 ```python
 # Convert date to ISO-formatted string when writing to database
@@ -926,7 +926,7 @@ cursor.executemany(
 for row in cursor.execute("select * from events;").fetchall():
     print(row)
 ```
-![img_73.png](img_73.png)
+![img_73.png](screen/img_73.png)
 
 
 ```python
@@ -937,7 +937,7 @@ db_path = 'C:/Users/zbign/Desktop/ISI__LAB/sql-tutorial/db/penguins.db'
         print(df)
 ```
 
-![img_74.png](img_74.png)
+![img_74.png](screen/img_74.png)
 
 
 ```python
@@ -956,7 +956,7 @@ with Session(engine) as session:
         print(result)
 ```
 
-![img_75.png](img_75.png)
+![img_75.png](screen/img_75.png)
 
 
 ```python
@@ -983,7 +983,7 @@ with Session(engine) as session:
         print(f"{dept.name}: {staff.personal} {staff.family}")
 ```
 
-![img_76.png](img_76.png)
+![img_76.png](screen/img_76.png)
 
 
 
